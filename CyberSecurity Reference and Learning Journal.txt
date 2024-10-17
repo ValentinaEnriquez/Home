@@ -1,0 +1,217 @@
+| Cybersecurity Reference and Learning    |
+| Journal                                 |
+| Valentina                               |
++-----------------------------------------+
+
+Table of Contents
+-----------------
+1. Navigation in Linux
+
+
+Navigation in Linux
+-------------------
+
+Commands List:
+- ls
+- cd
+- pwd
+- mkdir
+- rmdir
+
+Command Details:
+----------------
+
+- `ls`
+  - Purpose: Lists the contents of a directory.
+  - Usage: `ls` for basic listing, `ls -l` for detailed listing, `ls -a` to include hidden files.
+  - Notes: Essential for quickly viewing what's in the current directory.
+
+- `cd`
+  - Purpose: Changes the current directory.
+  - Usage: `cd [directory path]` to move to a specific directory, `cd ..` to move up one directory level, `cd` or `cd ~` to return to the home directory.
+  - Notes: Most commonly used for navigating through the filesystem.
+
+- `pwd`
+  - Purpose: Prints the current directory path.
+  - Usage: `pwd` to display the full path of the current directory.
+  - Notes: Useful for confirming your current location in the filesystem.
+
+- `mkdir`
+  - Purpose: Creates a new directory.
+  - Usage: `mkdir [directory name]` to create a new directory in the current location.
+  - Notes: Handy for organizing files into new folders.
+
+- `rmdir`
+  - Purpose: Removes a directory.
+  - Usage: `rmdir [directory name]` to delete an empty directory.
+  - Notes: Used for cleaning up and removing unused directories. Note that the directory must be empty.
+Commands: 
+
+Make folder: mkdir foldername 
+
+Make files: touch filename.txt 
+
+Put writing int file: echo “message”> filename.txt 
+
+Move files into folders: mv filename.txt foldername/ 
+
+Edit message in file: nano filename.txt 
+
+-Nano opens 
+
+-Rewrite message 
+
+-CTRL+o 
+
+-Enter 
+
+-CTRL+x 
+
+Delete files (inside folder/outside folder): rm filename.txt 
+
+Delete folders: rmdir ./foldername/ 
+Certainly! Here's a brief explanation of each of the commands you mentioned:
+
+1. **ifconfig:**
+   - Purpose: Displays information about network interfaces on your system.
+   - Usage: `ifconfig`
+   - Information Provided: IP address, MAC address, network status, and other interface-related details.
+
+2. **ip:**
+   - Purpose: A versatile command for network configuration, routing, and tunnels.
+   - Usage: `ip [options]`
+   - Information Provided: IP addresses, routing tables, network device status, etc.
+
+3. **traceroute:**
+   - Purpose: Traces the route that packets take to reach a destination.
+   - Usage: `traceroute [destination]`
+   - Information Provided: List of routers or hops along the path to the destination, showing latency for each.
+
+4. **tracepath:**
+   - Purpose: Similar to traceroute, but uses a different method to trace the route.
+   - Usage: `tracepath [destination]`
+   - Information Provided: Hops and latency like traceroute.
+
+5. **ping:**
+   - Purpose: Sends ICMP echo requests to a target to check if it's reachable.
+   - Usage: `ping [destination]`
+   - Information Provided: Round-trip time, packet loss, and other statistics.
+
+6. **netstat:**
+   - Purpose: Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+   - Usage: `netstat [options]`
+   - Information Provided: Open network connections, listening ports, routing table, etc.
+
+7. **ss:**
+   - Purpose: Similar to netstat, used to investigate sockets.
+   - Usage: `ss [options]`
+   - Information Provided: Socket information, including connections and listening ports.
+
+8. **dig:**
+   - Purpose: DNS lookup utility for querying DNS servers.
+   - Usage: `dig [domain]`
+   - Information Provided: IP addresses, DNS record details, and other DNS-related information.
+
+9. **nslookup:**
+   - Purpose: Queries DNS servers for domain information.
+   - Usage: `nslookup [domain]`
+   - Information Provided: IP addresses associated with a domain, and other DNS information.
+
+10. **route:**
+   - Purpose: Displays and manipulates the IP routing table.
+   - Usage: `route [options]`
+   - Information Provided: Routing table entries, showing how packets will be routed.
+
+11. **host:**
+    - Purpose: DNS lookup utility that is used to find the IP address and other details of a host.
+    - Usage: `host [domain]`
+    - Information Provided: IP address and other DNS-related information.
+
+12. **arp:**
+    - Purpose: Displays and modifies the ARP cache.
+    - Usage: `arp [options]`
+    - Information Provided: Mapping of IP addresses to MAC addresses in the local network.
+
+13. **iwconfig:**
+    - Purpose: Configures wireless network interfaces.
+    - Usage: `iwconfig [interface] [options]`
+    - Information Provided: Configuration details of wireless interfaces.
+
+14. **hostname:**
+    - Purpose: Displays or sets the system's hostname.
+    - Usage: `hostname [options]`
+    - Information Provided: Current system hostname.
+
+15. **curl or wget:**
+    - Purpose: Command-line tools for transferring data with URLs.
+    - Usage: `curl [options] [URL]` or `wget [options] [URL]`
+    - Information Provided: Downloads content from the specified URL.
+
+16. **mtr:**
+    - Purpose: Combines the functionality of ping and traceroute, providing both statistics and the route.
+    - Usage: `mtr [destination]`
+    - Information Provided: Continuous ping results and traceroute information.
+
+17. **whois:**
+    - Purpose: Retrieves information about a domain or IP address from WHOIS databases.
+    - Usage: `whois [domain or IP]`
+    - Information Provided: Registration details, contact information, and other domain-related details.
+
+18. **ifplugstatus:**
+    - Purpose: Checks the link status of network interfaces.
+    - Usage: `ifplugstatus [interface]`
+    - Information Provided: Indicates if the network cable is plugged in or not.
+
+19. **iftop:**
+    - Purpose: Displays a list of network connections and their bandwidth usage.
+    - Usage: `iftop [options]`
+    - Information Provided: Real-time network bandwidth usage.
+
+20. **tcpdump:**
+    - Purpose: Captures and analyzes network packets.
+    - Usage: `tcpdump [options]`
+    - Information Provided: Captured packet data for network analysis and troubleshooting.
+    Certainly! Let's go through each of the terms:
+
+1. **IP address (IPv4):**
+   - Purpose: Identifies a unique device on a network using a 32-bit numeric address.
+   - Example: 192.168.1.1
+
+2. **Subnet Masks:**
+   - Purpose: Used to divide an IP address into network and host portions.
+   - Example: 255.255.255.0 in CIDR notation would be /24.
+
+3. **Gateway:**
+   - Purpose: A network node that connects different networks, allowing communication between them.
+   - Example: The router's IP address in a local network.
+
+4. **DNS (Domain Name System):**
+   - Purpose: Translates domain names into IP addresses, making it easier for users to remember and access websites.
+   - Example: Resolves "www.example.com" to an IP address.
+
+5. **Network Switch:**
+   - Purpose: A device that connects devices within a local area network (LAN) and uses MAC addresses to forward data to the correct device.
+   - Function: Efficiently manages traffic by creating a dedicated path between two devices.
+
+6. **Network Router:**
+   - Purpose: Connects different networks and routes data between them based on IP addresses.
+   - Function: Determines the optimal path for data packets to reach their destination.
+
+7. **Access Points:**
+   - Purpose: Devices that allow wireless devices to connect to a wired network using Wi-Fi.
+   - Example: Wi-Fi routers often have integrated access points.
+
+8. **MAC Address:**
+   - Purpose: A unique identifier assigned to network interfaces for communication on a physical network.
+   - Example: 00:1A:2B:3C:4D:5E
+
+9. **Ports in Network Addressing:**
+   - Purpose: Logical endpoints for communication, used to distinguish between different services or processes on the same device.
+   - Example: Port 80 for HTTP, Port 22 for SSH.
+
+10. **Types of Networks:**
+    - **WAN (Wide Area Network):** Spans a large geographical area, connecting LANs and other networks.
+    - **LAN (Local Area Network):** Limited to a small geographic area, such as a single building or campus.
+    - **PAN (Personal Area Network):** Covers a very small area, typically within the range of an individual person.
+    - **MAN (Metropolitan Area Network):** Larger than a LAN but smaller than a WAN, covering a city or large campus.
+    - **VPN (Virtual Private Network):** Uses encryption and tunneling to create a secure connection over the internet, often used for remote access.
