@@ -215,3 +215,47 @@ Certainly! Here's a brief explanation of each of the commands you mentioned:
     - **PAN (Personal Area Network):** Covers a very small area, typically within the range of an individual person.
     - **MAN (Metropolitan Area Network):** Larger than a LAN but smaller than a WAN, covering a city or large campus.
     - **VPN (Virtual Private Network):** Uses encryption and tunneling to create a secure connection over the internet, often used for remote access.
+Git commands
+
+Initialize Git tracking: git init
+Check repo status: git status
+Add files to staging area:[git add 'file']
+      Adding all remaining files: git add.
+Commit with description: git commit -m "Description example"
+See commit history: git log
+Switching branches: git checkout 'branch name'
+      Create and switch to a new branch: git checkout -b 'branch name'
+Merge: git merge
+To see all commit history in graph form: git log --oneline --graph --all
+Revert file: git restore 'filename.txt'
+      If unavailable: git checkout -- 'filename.txt'
+To remove tracking:
+      echo "filename.txt" >> .gitignore
+      Remove from repo:git rm --cached 'filename.txt'
+      Commit:[git add .gitignore]
+GIt aliases:
+git st - git status
+      bash -[git config --global alias.st status]
+git ci - git commit
+      bash -[git config --global alias.ci commit]
+git co - git checkout
+      bash -[git config --global alias.co checkout]
+git br - For branch
+      bash -[git config --global alias.br branch]
+
+TO UNDO LAST COMMIT:
+[git reset --soft HEAD~1]- Keeps staged edits while undoing commit
+
+TO UNDO BOTH:
+git reset --hard HEAD~1
+- Permanently deletes both progress and previous commit. Use with caution.
+
+
+
+
+BASH SCRIPTING
+
+Bash script: a simple text file  which contains a series of commands
+      Used in linux for command execution, file navigation, and running repeated tasks/scripts
+How to write a bash script:
+      Specify interpreter: #!/bin/bash
