@@ -171,7 +171,9 @@ Certainly! Here's a brief explanation of each of the commands you mentioned:
     - Purpose: Captures and analyzes network packets.
     - Usage: `tcpdump [options]`
     - Information Provided: Captured packet data for network analysis and troubleshooting.
-    Certainly! Let's go through each of the terms:
+
+
+
 
 1. **IP address (IPv4):**
    - Purpose: Identifies a unique device on a network using a 32-bit numeric address.
@@ -215,7 +217,9 @@ Certainly! Here's a brief explanation of each of the commands you mentioned:
     - **PAN (Personal Area Network):** Covers a very small area, typically within the range of an individual person.
     - **MAN (Metropolitan Area Network):** Larger than a LAN but smaller than a WAN, covering a city or large campus.
     - **VPN (Virtual Private Network):** Uses encryption and tunneling to create a secure connection over the internet, often used for remote access.
-Git commands
+
+
+***Git commands***
 
 Initialize Git tracking: git init
 Check repo status: git status
@@ -259,3 +263,42 @@ Bash script: a simple text file  which contains a series of commands
       Used in linux for command execution, file navigation, and running repeated tasks/scripts
 How to write a bash script:
       Specify interpreter: #!/bin/bash
+
+
+
+***OS layers***:
+
+1. **Hardware Layer**
+   - The physical components (CPU, memory, storage, peripherals).
+
+2. **Kernel Layer**
+   - The core part of the OS that directly interacts with the hardware.
+   - Manages processes, memory, hardware, and system resources.
+
+3. **System Call Interface**
+   - Provides an interface for user applications to request services from the kernel.
+
+4. **User Interface (UI) Layer**
+   - The interface that allows users to interact with the OS (e.g., command line, graphical interface).
+
+5. **Application Layer**
+   - Software programs that run on the OS, like browsers, games, etc.
+
+This order represents the flow from hardware to user interaction.
+
+
+**What is a Network?**
+- A network is a group of connected devices (computers, phones, etc.) that can share information and resources.
+- **How it works:** Devices use cables or wireless connections to communicate and follow protocols (rules) for data exchange.
+
+**What is the Internet?**
+- The Internet is a global network connecting millions of devices worldwide.
+- **How it works:** The Internet uses servers to store data, and data is sent in packets through networks, reaching its destination via routers.
+- **Key Protocols:**
+  - **TCP/IP:** Ensures correct data transfer.
+  - **HTTP/HTTPS:** Used for web browsing.
+  - **DNS:** Translates website names into IP addresses.
+
+In short:
+- **Network:** Local connection between devices.
+- **Internet:** A global connection of networks.
