@@ -336,3 +336,103 @@ Wireshark: A powerful tool used for network analysis. It captures packets flowin
 Nmap: This tool scans a network to discover devices and services, and to detect any open ports. It's helpful for penetration testing and identifying network vulnerabilities.
 
 Traceroute: This tool helps track the route data takes across the internet, showing you the path and how long it takes to reach its destination. It’s great for troubleshooting slow connections.
+Got it! Here's a cheat sheet / answer key for your **Linux Terminal Skills & Knowledge Checklist**:
+
+---
+
+✅ **Terminal Navigation & Awareness**  
+- `pwd`: Shows current directory  
+- Arrow keys ↑ / ↓: Scroll through command history  
+- `Tab`: Auto-completes command or file/folder names  
+- `~`: Your home directory (`/home/yourusername`)  
+- `cd ~`: Goes to home directory  
+- `cd /`: Goes to root directory  
+- `cd ..`: Moves one directory up  
+
+---
+
+📁 **File & Folder Operations (CRUD)**  
+- `mkdir foldername`: Creates a folder  
+- `mkdir -p path/to/folder`: Creates nested folders  
+- `touch file.txt`: Creates an empty file  
+- `cat file.txt`: Views file content  
+- `nano file.txt`: Edits file using nano  
+- `rm file.txt`: Deletes file  
+- `rm -r foldername`: Deletes a folder recursively  
+- `rm -i`: Asks for confirmation before each delete  
+
+---
+
+🔐 **Permissions**  
+- `ls -l`: Shows permissions  
+  - Example: `-rw-r--r--`  
+- `chmod 755 filename`: Sets permissions  
+  - `r` = read, `w` = write, `x` = execute  
+- Common permission values:  
+  - `777`: All permissions for everyone  
+  - `755`: Full for owner, read/execute for others  
+  - `644`: Read/write for owner, read for others  
+
+---
+
+⚙️ **System Awareness**  
+- **Absolute path**: Starts with `/`, e.g. `/home/user/docs`  
+- **Relative path**: Based on current dir, e.g. `../folder/file`  
+- User files are usually in `/home/username`  
+- Root of file system is `/`
+
+---
+
+🛡️ **System Safety & Etiquette**  
+- Avoid `rm -rf /` (deletes everything!)  
+- Terminal prefix: `user@host:~/folder$`  
+  - `user`: your username  
+  - `host`: computer name  
+  - `~`: current path  
+- `sudo`: Run as admin  
+- `su`: Switch user (needs password)  
+- `su -`: Switch user and load their environment  
+- **Regular user**: Limited permissions  
+- **Root user**: Full control (dangerous if misused)  
+
+---
+
+💻 **Linux vs Windows vs VMs**  
+- Linux vs Windows:
+  - Case-sensitive vs not  
+  - Different path separators (`/` vs `\`)  
+  - Linux has no drive letters (C:\, etc.)  
+- VM = Virtual Machine: Simulated computer inside another  
+- Host = Real machine  
+- Don’t allocate more than 50% of host’s CPU/RAM to VM  
+
+---
+
+🧰 **Lab Prep Essentials**  
+- Properly shut down VM using GUI or `sudo shutdown now`  
+- Terminal in Debian: Use app menu or Ctrl+Alt+T  
+- Install tools:  
+  - `sudo apt update && sudo apt install git nano`  
+- Back up: Copy files out of VM using shared folders, cloud, etc.  
+- Editors: VS Code, Sublime Text, Nano, etc.  
+
+---
+
+🧠 **Git Flow (Basics)**  
+- `git init`: Start a repo  
+- `git add .`: Stage all changes  
+- `git commit -m "msg"`: Save a snapshot  
+- `git status`: Show what’s staged/unstaged  
+- `git log`: Show commit history  
+- `git push origin branchname`: Push to GitHub  
+- `git pull`: Fetch + merge from remote  
+- `git fetch`: Only download, don’t merge  
+
+---
+
+🌐 **GitHub + Remote Workflow**  
+- `git clone https://github.com/user/repo.git`: Clone repo  
+- `git checkout -b branchname`: Create and switch to branch  
+- **Pull requests**: Merge changes via GitHub  
+- **Merge conflicts**: Happen when changes overlap — resolve manually
+
